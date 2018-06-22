@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#"
+     xml:base="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#estFinancablePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#estFinancablePar"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Bien -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Bien"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#BienExterieur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#BienExterieur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Bien"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#BienHabitable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#BienHabitable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Bien"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Chalet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Chalet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#BienExterieur"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#estFinancablePar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#PretImmobilier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>masculin</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Garage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Garage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#BienExterieur"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#estFinancablePar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#PretImmobilier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>masculin</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Peniche -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Peniche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#BienExterieur"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#estFinancablePar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#PretImmobilier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>feminin</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Piscine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Piscine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#BienExterieur"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#estFinancablePar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#PretImmobilier"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>feminin</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Pret -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Pret"/>
+    
+
+
+    <!-- http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#PretConsommation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#PretConsommation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Pret"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#PretImmobilier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#PretImmobilier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Pret"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Terrain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#Terrain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/a.vescera/ontologies/2018/5/OWLReadyTuto3#BienExterieur"/>
+        <rdfs:comment>masculin</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
