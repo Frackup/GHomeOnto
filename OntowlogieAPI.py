@@ -71,9 +71,10 @@ def Ontologie(typeBien, typeFinancement):
 
     #Recherche de la JVM pour pouvoir charger le reasoner (il est écrit en JAVA)
     #owlready2.JAVA_EXE = "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath\\java.exe"
+    
 
     #Mise en place de l'ontologie
-    onto_path = "https://github.com/Frackup/GHomeOnto/"
+    onto_path = "./"
     onto_name = "OWLReadyTuto3.owl"
     onto_file = onto_path + onto_name
 
@@ -96,7 +97,7 @@ def Ontologie(typeBien, typeFinancement):
         class BiensFinancables(onto.Bien):
             equivalent_to = [onto.Bien & estFinancablePar.some(onto.PretImmobilier)]
 
-        sync_reasoner()
+        #sync_reasoner()
 
     #Fin du with
 
