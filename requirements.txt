@@ -1,0 +1,2 @@
+Flask==0.10.1
+owlready==2.0.8unidecode=1.0.22
