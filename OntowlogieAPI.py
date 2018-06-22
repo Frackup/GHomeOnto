@@ -44,9 +44,9 @@ def processRequest(req):
         typeFinancement = json_params['financement']
         typeBien = json_params['bien']
 
-        speech = Ontologie(typeBien, typeFinancement)
+        #speech = Ontologie(typeBien, typeFinancement)
 
-        #speech = " Vous voulez financer " + bien + " avec " + financement
+        speech = " Vous voulez financer " + bien + " avec " + financement
 
         print(speech)
     else:
