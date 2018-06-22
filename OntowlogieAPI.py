@@ -70,10 +70,10 @@ def Ontologie(typeBien, typeFinancement):
     deterIndef = "un"
 
     #Recherche de la JVM pour pouvoir charger le reasoner (il est écrit en JAVA)
-    owlready2.JAVA_EXE = "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath\\java.exe"
+    #owlready2.JAVA_EXE = "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath\\java.exe"
 
     #Mise en place de l'ontologie
-    onto_path = "file://C:/IA/Ontologies/"
+    onto_path = "https://github.com/Frackup/GHomeOnto/"
     onto_name = "OWLReadyTuto3.owl"
     onto_file = onto_path + onto_name
 
