@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# _*_ coding:utf8 _*_
+
 from owlready2 import *
 import owlready2
 import sys
